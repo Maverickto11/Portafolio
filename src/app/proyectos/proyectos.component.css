@@ -1,0 +1,78 @@
+body {
+    background-color: #1f2426;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+
+}
+
+.modal-content {
+    height: 300px;
+    width: 300px;
+    /* Establece el ancho predeterminado */
+    max-width: calc(100% - 550px);
+    /* Ancho máximo teniendo en cuenta el margen inicial */
+    margin: 5px 5px 5px 362px;
+    /* Centra horizontalmente el modal */
+    padding: 100px;
+    /* Añade relleno según sea necesario */
+    border: 2px solid #2f273f;
+    /* Borde del modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra del modal */
+    text-align: center;
+    background: url('https://t4.ftcdn.net/jpg/06/96/05/71/240_F_696057183_RI4QGTFLdvD8qfPOVlASl1AYHkprKrIy.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.ProyectoCrud {
+    position: absolute;
+    text-align: center;
+
+}
+
+.ProyectoCrud h6 {
+    color: whitesmoke;
+}
+
+#CarpetaCrud {
+    max-width: 17%;
+    margin-top: 15px;
+}
+
+.carpetas {
+    margin-left: -20%;
+
+}
+
+
+.Aviso {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #2f5784;
+    /* Color de fondo similar al de Windows 7 */
+    padding: 15px;
+    border: 1px solid #1c3c5b;
+    /* Borde del modal */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+    /* Agregamos un gradiente para darle un aspecto más antiguo */
+    background-image: linear-gradient(to bottom, #3c7cbf, #2f5784);
+    /* Agregamos un borde más grueso y de color más claro en la parte superior e izquierda para simular el efecto 3D de las ventanas antiguas */
+    border-top: 3px solid #6699cc;
+    border-left: 3px solid #6699cc;
+}
+
+.Aviso h2 {
+    margin-bottom: 10px;
+}
+
+.Aviso p {
+    margin-bottom: 0;
+}
