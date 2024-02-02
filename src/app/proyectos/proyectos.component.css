@@ -50,23 +50,16 @@ body {
 .Aviso {
     color: white;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 70px;
     font-size: 15px;
     font-weight: bold;
-    background-color: #2f5784;
+    background-color: #3b3b3b;
     /* Color de fondo similar al de Windows 7 */
     padding: 15px;
-    border: 1px solid #1c3c5b;
     /* Borde del modal */
-    border-radius: 5px;
     /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* Sombra */
-    /* Agregamos un gradiente para darle un aspecto más antiguo */
-    background-image: linear-gradient(to bottom, #3c7cbf, #2f5784);
-    /* Agregamos un borde más grueso y de color más claro en la parte superior e izquierda para simular el efecto 3D de las ventanas antiguas */
-    border-top: 3px solid #6699cc;
-    border-left: 3px solid #6699cc;
+
 }
 
 .Aviso h2 {
