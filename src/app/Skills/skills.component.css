@@ -1,5 +1,6 @@
 
 .Contenedor{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,12 +19,37 @@
     position: relative;
     width: 860px;
     height: 190px;
-    border-top: #000 1px solid;
     background-color: #4159A8;
     margin-top: auto;
     text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.barra-superior{
+
+    position: relative;
+    margin-left: auto;
+}
+
+.boton-cerrar {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 20px;
+}
+.boton-cerrar:hover {
+    color: #ccc;
+}
+.boton-cerrar:focus {
+    outline: none; /* Elimina la silueta de enfoque */
+    /* Añade aquí cualquier otro estilo que desees anular o establecer para el foco */
+}
 .cuadro{
     width: 400px;
     height: 250px; 
@@ -40,4 +66,17 @@
     height: 300px; /* Cambia esto según el tamaño que necesites */
     background-image: linear-gradient(to bottom, rgb(255 255 255 / 1), rgb(255 255 255 / 0));
     transform: rotate(10deg);
+}
+.fila{
+    display: flex;
+    margin-top: 10px;
+    padding-top: 30px;
+    transform: rotate(-10deg);
+
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
 }
