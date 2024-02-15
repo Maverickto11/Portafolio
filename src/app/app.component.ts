@@ -27,8 +27,12 @@ export class AppComponent {
 
     // Abre el nuevo modal y guarda su referencia
     this.currentDialogRef = this.dialog.open(ProyectosComponent, {
-      /*width: '23cm'*/
-      hasBackdrop: false,
+      width: '64%', // Ancho máximo del modal
+      height: '80%', // Altura máxima del modal
+      maxWidth: '80vw', // Ancho máximo del modal en viewport units
+      maxHeight: '80vh', // Altura máxima del modal en viewport units
+      autoFocus: false, // Evita el enfoque automático en el primer elemento del modal
+      hasBackdrop: false // Evita mostrar un fondo oscuro detrás del modal
     });
 
     this.currentDialogRef.afterClosed().subscribe((result) => {
@@ -44,8 +48,12 @@ export class AppComponent {
 
     // Abre el nuevo modal y guarda su referencia
     this.currentDialogRef = this.dialog.open(SkillsComponent, {
-      /*width: '23cm'*/
-      hasBackdrop: false,
+      width: '64%', // Ancho máximo del modal
+      height: '80%', // Altura máxima del modal
+      maxWidth: '80vw', // Ancho máximo del modal en viewport units
+      maxHeight: '80vh', // Altura máxima del modal en viewport units
+      autoFocus: false, // Evita el enfoque automático en el primer elemento del modal
+      hasBackdrop: false // Evita mostrar un fondo oscuro detrás del modal
     });
 
     this.currentDialogRef.afterClosed().subscribe((result) => {

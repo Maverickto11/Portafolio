@@ -6,60 +6,60 @@ body {
 }
 
 .modal-content {
-    height: 300px;
-    width: 300px;
-    /* Establece el ancho predeterminado */
-    max-width: calc(100% - 550px);
-    /* Ancho máximo teniendo en cuenta el margen inicial */
-    margin: 5px 5px 5px 362px;
-    /* Centra horizontalmente el modal */
-    padding: 100px;
-    /* Añade relleno según sea necesario */
-    border: 2px solid #2f273f;
-    /* Borde del modal */
+    position: relative;
+    width: 50%;
+    height: 100%;
+    max-width: 90%;
+    max-height: 100%;
+    margin-top: auto; /* Centra verticalmente */
+    margin-left: auto; /* Centra horizontalmente a la derecha */
+    margin-right: 0; /* Ajusta el margen derecho a 0 para alinear a la derecha */
+    margin-bottom: auto; /* Centra verticalmente */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra del modal */
     text-align: center;
     background: url('https://t4.ftcdn.net/jpg/06/96/05/71/240_F_696057183_RI4QGTFLdvD8qfPOVlASl1AYHkprKrIy.jpg');
     background-size: cover;
     background-position: center center;
+    overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
 }
-
 
 .ProyectoCrud {
     position: absolute;
-    text-align: center;
-
+    margin-top: 3%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 .ProyectoCrud h6 {
     color: whitesmoke;
 }
 
-#CarpetaCrud {
-    max-width: 17%;
-    margin-top: 15px;
+.CarpetaCrud {
+    width: 27%;
+    max-height: 27%; /* Para que la imagen no se salga del contenedor */
+    height: auto;
+    margin: 10px; /* Margen horizontal de 10px entre cada imagen */
+
 }
 
 .carpetas {
-    margin-left: -20%;
+    position: relative;
+    align-items: center;
 
 }
 
-
 .Aviso {
-    color: white;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #3b3b3b;
-    /* Color de fondo similar al de Windows 7 */
-    padding: 15px;
-    /* Borde del modal */
-    /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+    width: 70%; /* Ancho del div */
+    margin: 0 auto; /* Margen automático a la izquierda y a la derecha para centrarlo */
+    background-color: #f0f0f0;
+    padding: 20px;
+        
 }
 
 .Aviso h2 {
@@ -69,3 +69,4 @@ body {
 .Aviso p {
     margin-bottom: 0;
 }
+

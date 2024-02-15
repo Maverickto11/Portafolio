@@ -5,9 +5,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 510px;
-    width: 860px;
-    padding: 0px auto;
+    height: 100%;
+    width: 100%;
+    padding: 0% auto;
     margin: 0% auto;
     border-radius: 4px;
     background-image: url('../../assets/img/FondoSkills.jpg');
@@ -17,18 +17,42 @@
 
 .Skills{
     position: relative;
-    width: 860px;
-    height: 190px;
+    width: 100%;
+    height: 40%;
     background-color: #4159A8;
     margin-top: auto;
     text-align: center;
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -5% 10% rgba(0, 0, 0, 0.5);
+}
+
+h3{
+    color: white;
+}
+
+.stackCurrent{
+    position: relative;
+    width: 75%; /* Define el ancho deseado */
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    margin-top: 16%;
+    justify-content: space-between;
+
+}
+
+.skill {
+    margin: auto 0;
+}
+
+.Worked{
+    margin-top: 10%;
+
 }
 
 .barra-superior{
-
     position: relative;
     margin-left: auto;
+
 }
 
 .boton-cerrar {
@@ -42,6 +66,7 @@
     top: 50%;
     transform: translateY(-50%);
     margin-top: 20px;
+    
 }
 .boton-cerrar:hover {
     color: #ccc;
@@ -50,11 +75,6 @@
     outline: none; /* Elimina la silueta de enfoque */
     /* Añade aquí cualquier otro estilo que desees anular o establecer para el foco */
 }
-.cuadro{
-    width: 400px;
-    height: 250px; 
-    border: aliceblue 1px solid;
-}
 
 .skills-contenedor{
     position: absolute;
@@ -62,21 +82,23 @@
     flex-direction: column;
     align-items: center;
     margin-top: auto;  
-    width: 300px; /* Cambia esto según el tamaño que necesites */
-    height: 300px; /* Cambia esto según el tamaño que necesites */
+    width: 33%; /* Cambia esto según el tamaño que necesites */
+    height: 60%; /* Cambia esto según el tamaño que necesites */
     background-image: linear-gradient(to bottom, rgb(255 255 255 / 1), rgb(255 255 255 / 0));
     transform: rotate(10deg);
+    
 }
+
 .fila{
     display: flex;
-    margin-top: 10px;
-    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
     transform: rotate(-10deg);
-
 }
 
 .icon {
-    width: 35px;
-    height: 35px;
-    margin: 0px 10px;
+    width: 20%;
+    height: 80%;
+    padding: 0 7%;
 }
