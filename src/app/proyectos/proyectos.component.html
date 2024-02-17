@@ -1,14 +1,14 @@
 <body>
   <div class="carpetas">
       <div class="ProyectoCrud">
-          <img class="CarpetaCrud" [src]="carpetaCrud" alt="Proyecto Crud con java">
+          <img class="CarpetaCrud" (click)="openModal()" [src]="carpetaCrud" alt="Proyecto Crud con java">
           <img class="CarpetaCrud" [src]="carpetaCrud" alt="Proyecto Crud con java">
           <img class="CarpetaCrud" [src]="carpetaCrud" alt="Proyecto Crud con java">
       </div>
   </div>
 
   <div class="modal-content">
-      <div class="Aviso">
+      <div class="Aviso" *ngIf="showAviso">
           <h2>some navigation tips</h2>
           <p>click a proyect to see the details here. you can <b>navigate through elements dragging the mouse.</b></p>
       </div>
