@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog'; // Import the MatDialog module
+import { Component, EventEmitter, Inject, Output } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog'; // Import the MatDialog module
 import { ProyectosComponent } from '../proyectos/proyectos.component';
 
 @Component({
@@ -10,10 +10,8 @@ import { ProyectosComponent } from '../proyectos/proyectos.component';
   styleUrl: './proyecto-personal.component.css'
 })
 export class ProyectoPersonalComponent {
-
-  constructor(private dialog: MatDialog) {} // Inject the MatDialog module into the component's constructor
-
-  cerrarModal(): void {
-    this.dialog.closeAll();
-  }
+  Mario = '../../assets/img/Mario.png';
+  showAviso: boolean = false;
+  currentDialogRef: MatDialogRef<any> | undefined;
+  constructor(public matDialog: MatDialog) {} // Inyecta MatDialog y MAT_DIALOG_DATA
 }
